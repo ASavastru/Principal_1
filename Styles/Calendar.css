@@ -3,9 +3,9 @@ body {font-family: Verdana, sans-serif;}
 
 /* Month header */
 .month {
-    padding: 70px 25px;
+    padding: 50px 0;
     width: 100%;
-    background: #1abc9c;
+    background: #006091;
     text-align: center;
 }
 
@@ -16,36 +16,46 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .month ul li {
-    color: white;
-    font-size: 20px;
+    color: #ff8585;
+    font-size: 30px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 /* Previous button inside month header */
 .month .prev {
     float: left;
-    padding-top: 10px;
+    padding-top: 4px;
 }
 
 /* Next button */
 .month .next {
     float: right;
-    padding-top: 10px;
+    padding-top: 4px;
 }
 
 /* Weekdays (Mon-Sun) */
 .weekdays {
     margin: 0;
-    padding: 10px 0;
-    background-color:#ddd;
+    padding: 20px 0;
+    background-color: #851f1f;
 }
 
 .weekdays li {
     display: inline-block;
     width: 13.6%;
-    color: #666;
+    color: #ff8585;
     text-align: center;
+}
+
+/* Weekdays -> workend */
+.workday {
+    background: #851f1f;
+}
+
+/* Weekdays -> weekend */
+.weekend {
+    background: #851f1f;
 }
 
 /* Days (1-31) */
@@ -61,13 +71,32 @@ body {font-family: Verdana, sans-serif;}
     width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
-    font-size:12px;
+    font-size:13px;
     color: #777;
 }
 
-/* Highlight the "current" day */
-.days li .active {
+/* Highlight the day corresponding to the person's assigned colour code */
+
+.days li .active_1 {
     padding: 5px;
-    background: #1abc9c;
-    color: white !important
+    background: #0048ff;
+    color: #000000;
+}
+
+.days li .active_2 {
+    padding: 5px;
+    background: #ff0000;
+    color: #000000;
+}
+
+.days li .active_3 {
+    padding: 5px;
+    background: #36ff00;
+    color: #000000;
+}
+
+.days li .active_4 {
+    padding: 5px;
+    background: #de00ff;
+    color: #000000;
 }
