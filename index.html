@@ -10,73 +10,90 @@
 </head>
 
 <body>
-<div class="month">
-    <ul>
-        <li class="prev">&#10094;</li>
-        <li class="next">&#10095;</li>
-        <li>July<br><span style="font-size:18px">2021</span></li>
-    </ul>
-</div>
 
-
-<ul class="weekdays">
-    <li class="workday">Mo</li>
-    <li class="workday">Tu</li>
-    <li class="workday">We</li>
-    <li class="workday">Th</li>
-    <li class="workday">Fr</li>
-    <li class="weekend">Sa</li>
-    <li class="weekend">Su</li>
-</ul>
-
-
-
-<ul class="days">
-    <li><span class="active_4">1</span></li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li><span class="active_1">6</span></li>
-    <li>7</li>
-    <li>8</li>
-    <li><span class="active_2">9</span></li>
-    <li>10</li>
-    <li>11</li>
-    <li>12</li>
-    <li>13</li>
-    <li><span class="active_3">14</span></li>
-    <li>15</li>
-    <li>16</li>
-    <li>17</li>
-    <li>18</li>
-    <li>19</li>
-    <li>20</li>
-    <li>21</li>
-    <li>22</li>
-    <li>23</li>
-    <li>24</li>
-    <li>25</li>
-    <li>26</li>
-    <li><span class="active_4">27</span></li>
-    <li>28</li>
-    <li>29</li>
-    <li><span class="active_2">30</span></li>
-    <li>31</li>
-
-        <!-- TO DO: code below to adapt for highlight on click -->
-        <!-- <li><span class="active_1">5</span></li> -->
-
-</ul>
-
-<!-- TO DO: image display code for the employee pics -->
-
-<!--
 <div>
-    <img src="harold.jpg" alt="employee_1">
+    <table class="monthName">
+        <tr>
+            <td style="align-content: start">&#10094</td>
+            <td style="align-content: space-between">JULY</td>
+            <td style="align-content: end">&#10095</td>
+        </tr>
+    </table>
 </div>
--->
 
+<table class="daysTable">
+        <tr>
+            <td class="weekdaysHeader">Mo</td>
+            <td class="weekdaysHeader">Tu</td>
+            <td class="weekdaysHeader">We</td>
+            <td class="weekdaysHeader">Th</td>
+            <td class="weekdaysHeader">Fr</td>
+            <td class="weekdaysHeader">Sa</td>
+            <td class="weekdaysHeader">Su</td>
+        </tr>
+    <tr>
+        <td class="outOfMonth">27</td>
+        <td class="outOfMonth">28</td>
+        <td class="outOfMonth">29</td>
+        <td class="outOfMonth">30</td>
+        <td class="inMonth" onclick="alertman(1)">01</td>
+        <td class="inMonth" onclick="alertman(2)">02</td>
+        <td class="inMonth" onclick="alertman(3)">03</td>
+    </tr>
+    <tr>
+        <td class="inMonth" onclick="alertman(4)">04</td>
+        <td class="inMonth" onclick="alertman(5)">05</td>
+        <td class="inMonth" onclick="alertman(6)">06</td>
+        <td class="inMonth" onclick="alertman(7)">07</td>
+        <td class="inMonth" onclick="alertman(8)">08</td>
+        <td class="inMonth" onclick="alertman(9)">09</td>
+        <td class="inMonth" onclick="alertman(10)">10</td>
+    </tr>
+    <tr class="rowTables">
+        <td class="inMonth" onclick="alertman(11)">11</td>
+        <td class="inMonth" onclick="alertman(12)">12</td>
+        <td class="inMonth" onclick="alertman(13)">13</td>
+        <td class="inMonth" onclick="alertman(14)">14</td>
+        <td class="inMonth" onclick="alertman(15)">15</td>
+        <td class="inMonth" onclick="alertman(16)">16</td>
+        <td class="inMonth" onclick="alertman(17)">17</td>
+    </tr>
+    <tr>
+        <td class="inMonth" onclick="alertman(18)">18</td>
+        <td class="inMonth" onclick="alertman(19)">19</td>
+        <td class="inMonth" onclick="alertman(20)">20</td>
+        <td class="inMonth" onclick="alertman(21)">21</td>
+        <td class="inMonth" onclick="alertman(22)">22</td>
+        <td class="inMonth" onclick="alertman(23)">23</td>
+        <td class="inMonth" onclick="alertman(24)">24</td>
+    </tr>
+    <tr>
+        <td class="inMonth" onclick="alertman(25)">25</td>
+        <td class="inMonth" onclick="alertman(26)">26</td>
+        <td class="inMonth" onclick="alertman(27)">27</td>
+        <td class="inMonth" onclick="alertman(28)">28</td>
+        <td class="inMonth" onclick="alertman(29)">29</td>
+        <td class="inMonth" onclick="alertman(30)">30</td>
+        <td class="inMonth" onclick="alertman(31)">31</td>
+    </tr>
+    <tr>
+        <td class="outOfMonth">01</td>
+        <td class="outOfMonth">02</td>
+        <td class="outOfMonth">03</td>
+        <td class="outOfMonth">04</td>
+        <td class="outOfMonth">05</td>
+        <td class="outOfMonth">06</td>
+        <td class="outOfMonth">07</td>
+    </tr>
+</table>
+
+<script src="Click.js"></script>
+
+<div>
+    <table class="employeeTable">
+        <tr><td class="employeeTd"><img  class="employeeImage" src="emp_1.jpg" alt="employee_1"></td><td class="employeeName">Employee #1</td></tr>
+        <tr><td><img  class="employeeImage" src="emp_2.jpg" alt="employee_2"></td><td class="employeeName">Employee #2</td></tr>
+    </table>
+</div>
 </body>
 </html>
-

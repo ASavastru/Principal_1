@@ -1,102 +1,69 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
-/* Month header */
-.month {
-    padding: 50px 0;
-    width: 100%;
-    background: #006091;
+.monthName {
+    border: 1px solid black;
+    width: 50vw;
     text-align: center;
-}
-
-/* Month list */
-.month ul {
-    margin: 0;
-    padding: 0;
-}
-
-.month ul li {
-    color: #ff8585;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-    float: left;
-    padding-top: 4px;
-}
-
-/* Next button */
-.month .next {
-    float: right;
-    padding-top: 4px;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-    margin: 0;
-    padding: 20px 0;
     background-color: #851f1f;
+    color: white;
 }
 
-.weekdays li {
-    display: inline-block;
-    width: 13.6%;
+.weekdaysHeader {
+    border: 1px solid black;
+    width: 50vw;
+    text-align: center;
+    background-color: #851f1f;
+    color: white;
+}
+
+.daysTable {
+    border: 2px solid #964444;
+    width: 50vw;
+    text-align: center;
+    background-color: #ff8585;
+}
+
+.daysData {
+    border: 1px solid black;
+}
+
+
+.outOfMonth {
+    color: #ffb5b5;
+}
+
+.inMonth {
+    color: #ffffff;
+    transition-duration: 0.2s;
+}
+
+.inMonth:hover {
+    border: #283860;
+    font-size: 15px;
+    background: #851f1f;
+    color: #ffffff;
+    cursor: cell;
+    transition-duration: 0.5s;
+    border-radius: 50%;
+}
+
+.employeeTable {
+    border: 2px solid #964444;
+    width: 50vw;
+    background-color: #283860;
+}
+
+.employeeImage {
+    border-radius: 5%;
+    width: 20%;
+}
+
+.employeeName{
+    text-align: center;
     color: #ff8585;
-    text-align: center;
 }
 
-/* Weekdays -> workend */
-.workday {
-    background: #851f1f;
-}
-
-/* Weekdays -> weekend */
-.weekend {
-    background: #851f1f;
-}
-
-/* Days (1-31) */
-.days {
-    padding: 10px 0;
-    background: #eee;
-    margin: 0;
-}
-
-.days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:13px;
-    color: #777;
-}
-
-/* Highlight the day corresponding to the person's assigned colour code */
-
-.days li .active_1 {
-    padding: 5px;
-    background: #0048ff;
-    color: #000000;
-}
-
-.days li .active_2 {
-    padding: 5px;
-    background: #ff0000;
-    color: #000000;
-}
-
-.days li .active_3 {
-    padding: 5px;
-    background: #36ff00;
-    color: #000000;
-}
-
-.days li .active_4 {
-    padding: 5px;
-    background: #de00ff;
-    color: #000000;
+.employeeTd {
+    width: 25vw;
 }
